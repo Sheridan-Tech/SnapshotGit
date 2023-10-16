@@ -20,9 +20,10 @@ then
 
     if [ $? ]
     then
-        echo -e "\nGit snapshot successful!\n"
+        echo -e "\nGit snapshot successful\n"
+    else
+        echo -e "\nFailed to apply stash!\n"
     fi
-
 else
     echo -e "\nFailed to stash work!\n"
 fi
